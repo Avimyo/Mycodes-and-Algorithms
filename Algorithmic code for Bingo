@@ -3,11 +3,11 @@ from  random import*
 a=int(input("Enter 1 to continue and 0 to stop"))
 count=1
 i=1
-renum=list()
-num=list()#array
+renum=list()#to store the repeated numbers
+num=list()#to store the numbers 
 while a!=0:
     x= randint(1,100)
-    if x in num:
+    if x in num:#checks whether number is present in the array or not
         renum.append(int(x))
     if x not in num:   
         print(x) 
@@ -18,4 +18,5 @@ while a!=0:
          x= randint(1,100)
     
 print(num)
+print("The repeated numbers are")
 print (renum)
