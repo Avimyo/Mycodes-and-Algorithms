@@ -1,0 +1,21 @@
+#code in python
+from  random import*
+a=int(input("Enter 1 to continue and 0 to stop"))
+count=1
+i=1
+renum=list()
+num=list()#array
+while a!=0:
+    x= randint(1,100)
+    if x in num:
+        renum.append(int(x))
+    if x not in num:   
+        print(x) 
+        num.append(int(x))
+        count=count+1
+        a=int(input("Enter 1 to continue and 0 to stop"))
+    else:
+         x= randint(1,100)
+    
+print(num)
+print (renum)
